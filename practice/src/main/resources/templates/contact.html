@@ -56,7 +56,8 @@
 				<td>建物名</td>
 				<td>
 					<input type="text" th:field="*{buildingName}">
-					<span th:if="${#fields.hasErrors('buildingName')}" th:errors="*{buildingName}" style="color: red"></span>
+					<span th:if="${#fields.hasErrors('buildingName')}" th:errors="*{buildingName}"
+						style="color: red"></span>
 				</td>
 			</tr>
 			<tr>
@@ -67,7 +68,8 @@
 						<option th:value="technicalQuestions">技術的なお問い合わせ</option>
 						<option th:value="other">その他</option>
 					</select>
-					<span th:if="${#fields.hasErrors('contactType')}" th:errors="*{contactType}" style="color: red"></span>
+					<span th:if="${#fields.hasErrors('contactType')}" th:errors="*{contactType}"
+						style="color: red"></span>
 
 				</td>
 			</tr>
